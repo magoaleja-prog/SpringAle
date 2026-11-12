@@ -226,6 +226,10 @@ El proyecto no sirve una página HTML; toda la interacción se realiza con la AP
 - Swagger UI: <http://localhost:8080/swagger-ui.html>
 - OpenAPI JSON: <http://localhost:8080/v3/api-docs>
 
+> La ruta usa el puerto configurable con la variable `PORT` (por defecto `8080`). Si lo cambias, la URL sería `http://localhost:TU_PUERTO/swagger-ui.html`.
+>
+> Al abrir Swagger UI, el navegador redirige internamente a `/swagger-ui/index.html`; es el comportamiento normal de Springdoc (por eso una petición directa puede devolver `302`).
+
 En Swagger, usar el botón **Authorize** y pegar el token JWT devuelto por `/auth/login`.
 
 ---
