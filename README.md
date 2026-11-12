@@ -14,7 +14,7 @@ C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle
 
 No es `C:\Users\Eider\OneDrive\Documentos\SpringAle`: esa carpeta solo contiene la carpeta del proyecto y archivos de IDE. Todos los comandos de este README se ejecutan desde la carpeta que contiene `pom.xml`.
 
-> Nota: el repositorio Git de SpringAle está inicializado dentro de la raíz Maven y apunta a `https://github.com/magoaleja-prog/SchoolNote` (rama `main`). La carpeta `C:\Users\Eider` contiene además un repositorio Git ajeno a este proyecto; no lo use para versionar SpringAle.
+> Nota: el repositorio Git de SpringAle está inicializado dentro de la raíz Maven y apunta a `https://github.com/magoaleja-prog/SpringAle` (rama `main`). La carpeta `C:\Users\Eider` contiene además un repositorio Git ajeno a este proyecto; no lo use para versionar SpringAle.
 
 ---
 
