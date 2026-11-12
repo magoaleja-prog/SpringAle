@@ -4,17 +4,15 @@ Backend REST desarrollado con **Spring Boot 4.1.2** y **Java 21+** para la gesti
 
 La documentación interactiva está disponible en `/swagger-ui.html`. El proyecto no incluye vistas HTML: el backend se consume mediante la API REST y Swagger.
 
-## Ubicación real del proyecto
+## Repositorio
 
-La raíz Maven es:
+El código está publicado en GitHub:
 
 ```text
-C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle
+https://github.com/magoaleja-prog/SpringAle
 ```
 
-No es `C:\Users\Eider\OneDrive\Documentos\SpringAle`: esa carpeta solo contiene la carpeta del proyecto y archivos de IDE. Todos los comandos de este README se ejecutan desde la carpeta que contiene `pom.xml`.
-
-> Nota: el repositorio Git de SpringAle está inicializado dentro de la raíz Maven y apunta a `https://github.com/magoaleja-prog/SpringAle` (rama `main`). La carpeta `C:\Users\Eider` contiene además un repositorio Git ajeno a este proyecto; no lo use para versionar SpringAle.
+Todos los comandos de este README se ejecutan desde la raíz del proyecto (la carpeta que contiene `pom.xml`).
 
 ---
 
@@ -66,7 +64,7 @@ src/main/java/org/example/springale/
 Estructura resumida de la raíz Maven:
 
 ```text
-C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle\
+SpringAle\
 ├── database\
 │   └── sistema_academico.sql
 ├── src\
@@ -119,16 +117,16 @@ Patrones aplicados:
 
 ## Puesta en marcha
 
-Todos los comandos se ejecutan desde la raíz Maven:
+Todos los comandos se ejecutan desde la raíz del proyecto (la carpeta que contiene `pom.xml`). Si clonaste el repositorio, entra a la carpeta:
 
 ```bat
-cd /d C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle
+cd /d ruta\al\proyecto\SpringAle
 ```
 
 En PowerShell:
 
 ```powershell
-Set-Location 'C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle'
+Set-Location 'ruta\al\proyecto\SpringAle'
 ```
 
 ### Requisitos previos
@@ -157,7 +155,7 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ### Opción A: MySQL (perfil por defecto)
 
 1. Tener MySQL 8 en ejecución.
-2. Importar `C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle\database\sistema_academico.sql` desde phpMyAdmin, MySQL Workbench o la consola.
+2. Importar `database\sistema_academico.sql` desde phpMyAdmin, MySQL Workbench o la consola.
 3. Ajustar las credenciales si es necesario:
 
 ```bash
