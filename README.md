@@ -14,7 +14,7 @@ C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle
 
 No es `C:\Users\Eider\OneDrive\Documentos\SpringAle`: esa carpeta solo contiene la carpeta del proyecto y archivos de IDE. Todos los comandos de este README se ejecutan desde la carpeta que contiene `pom.xml`.
 
-> Nota: en este equipo el repositorio Git está inicializado en `C:\Users\Eider`, no dentro de la carpeta del proyecto. Si se desea un repositorio propio de SpringAle, debe crearse dentro de la raíz Maven.
+> Nota: el repositorio Git de SpringAle está inicializado dentro de la raíz Maven y apunta a `https://github.com/magoaleja-prog/SchoolNote` (rama `main`). La carpeta `C:\Users\Eider` contiene además un repositorio Git ajeno a este proyecto; no lo use para versionar SpringAle.
 
 ---
 
@@ -129,6 +129,29 @@ En PowerShell:
 
 ```powershell
 Set-Location 'C:\Users\Eider\OneDrive\Documentos\SpringAle\SpringAle'
+```
+
+### Requisitos previos
+
+- **JDK 21 o superior** (el proyecto está configurado con `java.version=21`).
+- Verificar la versión que usa Maven:
+
+```bat
+mvnw.cmd -v
+```
+
+Si `java -version` muestra Java 8 o inferior, configure `JAVA_HOME` antes de ejecutar Maven:
+
+```bat
+set JAVA_HOME=C:\ruta\al\jdk-21
+set PATH=%JAVA_HOME%\bin;%PATH%
+```
+
+En PowerShell:
+
+```powershell
+$env:JAVA_HOME="C:\ruta\al\jdk-21"
+$env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ```
 
 ### Opción A: MySQL (perfil por defecto)
